@@ -89,9 +89,22 @@ body {
 }
 /* Header */
 
+/*home page*/
+.container .jumbotron {
+  box-shadow: 0 0 50px #3f0c1f;
+  border: 2px solid #3f0c1f;
+}
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-
+  /* home page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+  }
+  #call-btn, #xs-deliver {
+    display: none;
+  }
 }
 
 /********** Medium devices only **********/
@@ -102,11 +115,26 @@ body {
     height: 100px;
     margin: 10px 15px 10px 0;
   }
+  /* home page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
+  #call-btn, #xs-deliver {
+    display: none;
+  }
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-
+  /* home page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+  }
+  #call-btn, #xs-deliver {
+    display: none;
+  }
 }
 
 /********** Extra small devices only **********/
@@ -127,5 +155,36 @@ body {
 }
 .navbar-brand p img {/*star*/
   height: 20px;
+}
+#collapsable-nav a {/*collapsed menu*/
+  font-size: 1.2em;
+}
+#collapsable-nav a span {
+  font-size: 1em;
+  margin-right: 5px;
+}
+/*phone Number*/
+#call-btn > a {
+  font-size: 1.5em;
+  display: block;
+  margin: 0 20px;
+  padding: 10px;
+  border: 2px solid #fff;
+  background-color: #f6b319;
+  color: #951c49
+}
+
+#xs-deliver {
+  margin-top: 5px;
+  font-size: .7em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+/*ENd phone number*/
+
+/*home page*/
+.container .jumbotron {
+  margin-top: 30px;
+  padding: 0;
 }
 }
